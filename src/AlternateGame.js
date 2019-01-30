@@ -1,4 +1,4 @@
-class AlternateGame extends Phaser.Scene {
+export default class AlternateGame extends Phaser.Scene {
   constructor() {
     super({key: 'AlternateGame'})
   }
@@ -129,199 +129,126 @@ class AlternateGame extends Phaser.Scene {
     // Level design
     let box = this.physics.add.sprite(2045, 397, 'block3');
     this.obstacles.add(box);
-    box.setImmovable();
-    box.alpha = 0;
     // Lego
     box = this.physics.add.sprite(2688, 392, 'block3');
     this.obstacles.add(box);
-    box.setImmovable();
-    box.alpha = 0;
     box = this.physics.add.sprite(2742, 349, 'block3');
     this.obstacles.add(box);
-    box.setImmovable();
-    box.alpha = 0;
     box = this.physics.add.sprite(2795, 392, 'block3');
     this.obstacles.add(box);
-    box.setImmovable();
-    box.alpha = 0;
     // Guling
     box = this.physics.add.sprite(3479, 0, 'block3');
     this.obstacles.add(box);
-    box.setImmovable();
-    box.alpha = 0;
     box = this.physics.add.sprite(3597, 202, 'block3');
     this.obstacles.add(box);
-    box.setImmovable();
-    box.alpha = 0;
     box = this.physics.add.sprite(3597, 242, 'block3');
     this.obstacles.add(box);
-    box.setImmovable();
-    box.alpha = 0;
     // Penghapus
     box = this.physics.add.sprite(4060, 413, 'block3');
     this.obstacles.add(box);
-    box.setImmovable();
-    box.alpha = 0;
     // Selimut
     box = this.physics.add.sprite(4863, 144, 'block3');
     this.obstacles.add(box);
-    box.setImmovable();
-    box.alpha = 0;
     // Bantal
     box = this.physics.add.sprite(4813, 378, 'block3');
     this.obstacles.add(box);
-    box.setImmovable();
-    box.alpha = 0;
     // sponge
     box = this.physics.add.sprite(4897, 390, 'block3');
     this.obstacles.add(box);
-    box.setImmovable();
-    box.alpha = 0;
     // buku diary
     box = this.physics.add.sprite(5461, 375, 'block3');
     this.obstacles.add(box);
-    box.setImmovable();
-    box.alpha = 0;
     //Lego
     box = this.physics.add.sprite(5781, 375, 'block3');
     this.obstacles.add(box);
-    box.setImmovable();
-    box.alpha = 0;
     //Guling
     box = this.physics.add.sprite(6065, 375, 'block3');
     this.obstacles.add(box);
-    box.setImmovable();
-    box.alpha = 0;
     //sponge
     box = this.physics.add.sprite(6253, 375, 'block3');
     this.obstacles.add(box);
-    box.setImmovable();
-    box.alpha = 0;
     //Per
     box = this.physics.add.sprite(6428, 375, 'block3');
     this.obstacles.add(box);
-    box.setImmovable();
-    box.alpha = 0;
     //Peraut
     box = this.physics.add.sprite(6588, 383, 'block3');
     this.obstacles.add(box);
-    box.setImmovable();
-    box.alpha = 0;
     //Guling
     box = this.physics.add.sprite(6780, 301, 'block3');
     this.obstacles.add(box);
-    box.setImmovable();
-    box.alpha = 0;
     //Pulpen
     box = this.physics.add.sprite(6790, 394, 'block3');
     this.obstacles.add(box);
-    box.setImmovable();
-    box.alpha = 0;
     //Pensil
     box = this.physics.add.sprite(7102, 375, 'block3');
     this.obstacles.add(box);
-    box.setImmovable();
-    box.alpha = 0;
     //Pulpen
     box = this.physics.add.sprite(7232, 394, 'block3');
     this.obstacles.add(box);
-    box.setImmovable();
-    box.alpha = 0;
     //Kunci
     box = this.physics.add.sprite(7385, 361, 'block3');
     this.obstacles.add(box);
-    box.setImmovable();
-    box.alpha = 0;
     //Pensil
     box = this.physics.add.sprite(7536, 388, 'block3');
     this.obstacles.add(box);
-    box.setImmovable();
-    box.alpha = 0;
     //Tipe x
     box = this.physics.add.sprite(7672, 381, 'block3');
     this.obstacles.add(box);
-    box.setImmovable();
-    box.alpha = 0;
     //Ryu
     box = this.physics.add.sprite(7939, 163, 'block3');
     this.obstacles.add(box);
-    box.setImmovable();
-    box.alpha = 0;
     //Bubble 1
     box = this.physics.add.sprite(8535, 364, 'block3');
     this.obstacles.add(box);
-    box.setImmovable();
-    box.alpha = 0;
     //Persib
     box = this.physics.add.sprite(9096, 198, 'block3');
     this.obstacles.add(box);
-    box.setImmovable();
-    box.alpha = 0;
     //Bubble 2
     box = this.physics.add.sprite(9713, 364, 'block3');
     this.obstacles.add(box);
-    box.setImmovable();
-    box.alpha = 0;
     //Kumang
     box = this.physics.add.sprite(10326, 392, 'block3');
     this.obstacles.add(box);
-    box.setImmovable();
-    box.alpha = 0;
     //Jepitan
     box = this.physics.add.sprite(10964, 199, 'block3');
     this.obstacles.add(box);
-    box.setImmovable();
-    box.alpha = 0;
     //buku
     box = this.physics.add.sprite(10968, 390, 'block3');
     this.obstacles.add(box);
-    box.setImmovable();
-    box.alpha = 0;
     //Selimut
     box = this.physics.add.sprite(11696, 94, 'block3');
     this.obstacles.add(box);
-    box.setImmovable();
-    box.alpha = 0;
     //Bantal sepotong
     box = this.physics.add.sprite(11746, 384, 'block3');
     this.obstacles.add(box);
-    box.setImmovable();
-    box.alpha = 0;
     //sponge
     box = this.physics.add.sprite(11665, 388, 'block3');
     this.obstacles.add(box);
-    box.setImmovable();
-    box.alpha = 0;
     //Penghapus
     box = this.physics.add.sprite(12404, 393, 'block3');
     this.obstacles.add(box);
-    box.setImmovable();
-    box.alpha = 0;
     //Guling Naruto
     box = this.physics.add.sprite(13012, 165, 'block3');
     this.obstacles.add(box);
-    box.setImmovable();
-    box.alpha = 0;
     //Lego 1
     box = this.physics.add.sprite(13466, 395, 'block3');
     this.obstacles.add(box);
-    box.setImmovable();
-    box.alpha = 0;
     //Lego 2
     box = this.physics.add.sprite(13521, 377, 'block3');
     this.obstacles.add(box);
-    box.setImmovable();
-    box.alpha = 0;
     //Lego 3
     box = this.physics.add.sprite(13576, 395, 'block3');
     this.obstacles.add(box);
-    box.setImmovable();
-    box.alpha = 0;
     //Peraut
     box = this.physics.add.sprite(14014, 386, 'block3');
     this.obstacles.add(box);
-    box.setImmovable();
-    box.alpha = 0;
+	
+	// Iterate on group
+	this.obstacles.children.iterate(box => {
+		box.setImmovable();
+		box.alpha = 0;
+	});
+	console.log('Active box: ' + this.obstacles.countActive(true));
 
     // Collider handling
     this.physics.add.collider(this.char, this.platform);
@@ -501,10 +428,10 @@ class AlternateGame extends Phaser.Scene {
 	else {
 		// Keyboard Setting
 		if (this.key_J.isDown){
-			//this.doSlide();
+			this.doSlide();
 			if (!this.isPressedA){
 			  console.log('J pressed');
-			  this.doShooting();
+			  //this.doShooting();
 			  this.isPressedA = true;
 			}
 		}
@@ -530,5 +457,3 @@ class AlternateGame extends Phaser.Scene {
   }
 
 }
-
-export default AlternateGame;
