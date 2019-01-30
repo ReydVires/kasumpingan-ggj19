@@ -33,6 +33,11 @@ class AlternateGame extends Phaser.Scene {
     this.input.gamepad.once('down', (pad, button, index) => {
       this.gamepad = pad;
     });
+	
+	// Keyboard Control
+	this.key_J = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.J);
+	this.key_K = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.K);
+	this.key_R = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.R);
 
     // GameObject Group
     this.bullets = this.physics.add.group({
@@ -323,8 +328,6 @@ class AlternateGame extends Phaser.Scene {
     this.physics.add.collider(this.char, this.obstacles);
     this.physics.add.collider(this.bodyChar, this.obstacles);
 
-    this.key_R = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.R);
-
   }
 
   doSlide(){
@@ -495,6 +498,35 @@ class AlternateGame extends Phaser.Scene {
         this.isPressedB = false;
       }
     }
+	else {
+		// Keyboard Setting
+		if (this.key_J.isDown){
+			//this.doSlide();
+			if (!this.isPressedA){
+			  console.log('J pressed');
+			  this.doShooting();
+			  this.isPressedA = true;
+			}
+		}
+		else if (this.key_J.isUp){
+			this.isPressedA = false;
+		}
+		if (this.key_K.isDown){
+			console.log('B pressing');
+			if (!this.isPressedB){
+			  console.log('B pressed');
+			  this.doJump();
+			  this.soundJump.play();
+			  this.isPressedB = true;
+			}
+		}
+		else if (this.key_K.isUp){
+			if (this.animState != 'shooting'){
+			  this.animState = 'run';
+			}
+			this.isPressedB = false;
+		}
+	}
   }
 
 }
